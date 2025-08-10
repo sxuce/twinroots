@@ -12,16 +12,12 @@ interface NavigationProps {
 const categories = ['ALL', 'JORTS', 'TOPS', 'OUTERWEAR', 'PANTS', 'FOOTWEAR', 'ACCESS']
 
 const navigationLinks = [
-  { path: '/shop', label: 'SHOP' },
-  { path: '/archive', label: 'ARCHIVE' },
-  { path: '/lookbook', label: 'LOOKBOOK' },
-  { path: '/upcoming', label: 'UPCOMING' },
-  { path: '/stickers', label: 'STICKERS' },
-  { path: '/retail-stores', label: 'RETAIL' },
-  { path: '/contact', label: 'CONTACT' },
-  { path: '/jobs', label: 'JOBS' },
-  { path: '/shipping', label: 'SHIPPING' },
-  { path: '/terms', label: 'TERMS' }
+  { path: '/twinroots/shop', label: 'SHOP' },
+  { path: '/twinroots/archive', label: 'ARCHIVE' },
+  { path: '/twinroots/retail-stores', label: 'RETAIL' },
+  { path: '/twinroots/contact', label: 'CONTACT' },
+  { path: '/twinroots/shipping', label: 'SHIPPING' },
+  { path: '/twinroots/terms', label: 'TERMS' }
 ]
 
 export default function Navigation({ selectedCategory, onCategoryChange }: NavigationProps) {
@@ -31,23 +27,22 @@ export default function Navigation({ selectedCategory, onCategoryChange }: Navig
   const isShopPage = location.pathname === '/' || location.pathname === '/shop'
 
   return (
-    <div className="border-b border-border p-6 bg-muted">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-6">
+    <div className="border-b border-border p-4 md:p-6 bg-muted">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 w-full">
           {/* Search Bar - Only show on shop page */}
           {isShopPage && (
-            <div className="w-80">
+            <div className="w-full md:w-80 mb-2 md:mb-0">
               <SearchBar placeholder="Search products..." />
             </div>
           )}
-          
           {/* Main Navigation Links */}
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-2 md:gap-6 w-full">
             {navigationLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`hover:text-rose-gold transition-all-smooth ${
+                className={`hover:text-rose-gold transition-all-smooth px-2 py-1 text-base md:text-sm ${
                   location.pathname === link.path 
                     ? 'text-rose-gold underline decoration-rose-gold text-shadow-rose-gold' 
                     : 'text-muted-foreground hover:scale-105'

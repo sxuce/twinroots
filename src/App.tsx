@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
+import HomePage from './pages/HomePage'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Shop from './pages/Shop'
@@ -28,25 +29,20 @@ function App() {
             <Navigation />
             <main>
               <Routes>
-                <Route path="/" element={<Shop />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/product/:productId" element={<ProductDetail />} />
                 <Route path="/archive" element={<Archive />} />
-                <Route path="/lookbook" element={<Lookbook />} />
-                <Route path="/upcoming" element={<Upcoming />} />
-                <Route path="/stickers" element={<Stickers />} />
                 <Route path="/retail-stores" element={<RetailStores />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/jobs" element={<Jobs />} />
-                  <Route path="/shipping" element={<Shipping />} />
-                  <Route path="/terms" element={<TermsOfService />} />
-                </Routes>
-              </main>
-              
-              <Footer />
-            </div>
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/shipping" element={<Shipping />} />
+                <Route path="/terms" element={<TermsOfService />} />
+              </Routes>
+            </main>
+            <Footer />
           </div>
         </div>
+      </div>
     </Router>
   );
 }
