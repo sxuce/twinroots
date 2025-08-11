@@ -8,7 +8,7 @@ export default function RetailStores() {
       address: '123 Fashion Street, Design District, New York, NY 10001',
       phone: '+1 (555) 123-4567',
       hours: 'Mon-Sat: 10AM-8PM, Sun: 12PM-6PM',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500'
+      image: 'https://images.unsplash.com/photo-1634888523664-249f901e0019?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0cmVldHdlYXIlMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D'
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ export default function RetailStores() {
       address: '456 Style Avenue, Fashion District, Los Angeles, CA 90015',
       phone: '+1 (555) 987-6543',
       hours: 'Mon-Sat: 11AM-9PM, Sun: 12PM-7PM',
-      image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=500'
+      image: 'https://images.unsplash.com/photo-1577394656992-0f7bf88485c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0cmVldHdlYXIlMjBzdG9yZXxlbnwwfHwwfHx8MA%3D%3D'
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ export default function RetailStores() {
       address: '789 Design Lane, Shoreditch, London, UK E1 6AA',
       phone: '+44 20 1234 5678',
       hours: 'Mon-Sat: 10AM-7PM, Sun: 12PM-6PM',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500'
+      image: 'https://images.unsplash.com/photo-1553811526-27486ddd0258?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3RyZWV0d2VhciUyMHN0b3JlfGVufDB8fDB8fHww'
     }
   ]
 

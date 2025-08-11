@@ -4,28 +4,28 @@ export default function Archive() {
       id: 1,
       name: 'Winter 2023',
       description: 'Cozy winter essentials and layering pieces',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500',
+      image: 'https://i.ibb.co/SDs2b3R2/Image-August-11-2025-1-36-AM.png',
       year: '2023'
     },
     {
       id: 2,
       name: 'Fall 2023',
       description: 'Autumn colors and transitional styles',
-      image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=500',
+      image: 'https://i.ibb.co/8LDVSZcK/Google-AI-Studio-2025-08-11-T00-41-53-058-Z.png',
       year: '2023'
     },
     {
       id: 3,
       name: 'Summer 2023',
       description: 'Light and breathable summer collection',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500',
+      image: 'https://i.ibb.co/5Xm7MC1r/Google-AI-Studio-2025-08-11-T00-40-59-354-Z.png',
       year: '2023'
     },
     {
       id: 4,
       name: 'Spring 2023',
       description: 'Fresh spring styles and new beginnings',
-      image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=500',
+      image: 'https://i.ibb.co/ccc2BZJ8/Google-AI-Studio-2025-08-11-T00-40-03-124-Z.png',
       year: '2023'
     }
   ]

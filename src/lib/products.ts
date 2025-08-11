@@ -33,53 +33,269 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: '"aziza" brown washed Jorts',
-    description: "Premium denim jorts with a vintage washed finish. These high-quality shorts feature a comfortable fit and durable construction, perfect for everyday wear. Made from 100% cotton denim with reinforced stitching for longevity.",
-    price: 89,
-    currency: '€',
-    image: 'https://derschutze.com/cdn/shop/files/2025-06-18-22-2-1_fe1b79cb-35ca-4070-bfaa-cce08f1a3395.jpg?v=1750750983&width=500',
-    images: [
+    name: 'Blossom Jersey',
+    description: 'A limited edition jersey inspired by spring blossoms. Features a soft, breathable fabric and a vibrant floral print. Perfect for casual wear or sports.',
+    price: 65,
+    {
+      id: 1,
+      name: 'Blossom Jersey',
+      description: 'A limited edition jersey inspired by spring blossoms. Features a soft, breathable fabric and a vibrant floral print. Perfect for casual wear or sports.',
+      price: 65,
       {
         id: 1,
-        url: 'https://derschutze.com/cdn/shop/files/2025-06-18-22-2-1_fe1b79cb-35ca-4070-bfaa-cce08f1a3395.jpg?v=1750750983&width=800',
-        alt: 'Brown washed jorts front view'
+        name: 'Blossom Jersey',
+        description: 'A limited edition jersey inspired by spring blossoms. Features a soft, breathable fabric and a vibrant floral print. Perfect for casual wear or sports.',
+        price: 65,
+        currency: '€',
+        image: 'https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-50dc-620a-b2e7-86a3566eb0bf/raw?se=2025-08-11T00%3A35%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=7bfad340-4d81-5ed0-a5f4-53b84232d6ab&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-10T10%3A18%3A07Z&ske=2025-08-11T10%3A18%3A07Z&sks=b&skv=2024-08-04&sig=gqZYPJzseTQIDe3eKaNM%2BeNx6py5HHvO2IqFfKezhGw%3D',
+        images: [
+          {
+            id: 1,
+            url: 'https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-50dc-620a-b2e7-86a3566eb0bf/raw?se=2025-08-11T00%3A35%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=7bfad340-4d81-5ed0-a5f4-53b84232d6ab&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-10T10%3A18%3A07Z&ske=2025-08-11T10%3A18%3A07Z&sks=b&skv=2024-08-04&sig=gqZYPJzseTQIDe3eKaNM%2BeNx6py5HHvO2IqFfKezhGw%3D',
+            alt: 'Blossom themed jersey front view'
+          }
+        ],
+        variants: [
+          { id: 1, name: 'Standard', color: 'Blossom', available: true }
+        ],
+        category: 'TOPS',
+        tags: ['jersey', 'blossom', 'floral', 'limited'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        materials: ['Polyester', 'Cotton'],
+        care: ['Machine wash cold', 'Do not bleach', 'Tumble dry low'],
+        featured: true,
+        new: true
       },
       {
         id: 2,
-        url: 'https://derschutze.com/cdn/shop/files/2025-06-18-22-2-1_fe1b79cb-35ca-4070-bfaa-cce08f1a3395.jpg?v=1750750983&width=800',
-        alt: 'Brown washed jorts back view'
+        name: 'Grey Edgy Jeans',
+        description: 'Distressed grey jeans with an edgy streetwear vibe. Perfect for pairing with oversized tops and sneakers.',
+        price: 79,
+        currency: '€',
+        image: 'https://i.ibb.co/G1QwC7y/Google-AI-Studio-2025-08-11-T00-44-04-019-Z-removebg-preview.png',
+        images: [
+          { id: 1, url: 'https://i.ibb.co/G1QwC7y/Google-AI-Studio-2025-08-11-T00-44-04-019-Z-removebg-preview.png', alt: 'Grey edgy jeans product' }
+        ],
+        variants: [ { id: 1, name: 'Grey', color: '#888888', available: true } ],
+        category: 'PANTS',
+        tags: ['jeans', 'grey', 'edgy', 'streetwear'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        materials: ['Denim'],
+        care: ['Machine wash cold', 'Tumble dry low'],
+        new: true
       },
       {
         id: 3,
-        url: 'https://derschutze.com/cdn/shop/files/2025-06-18-22-2-1_fe1b79cb-35ca-4070-bfaa-cce08f1a3395.jpg?v=1750750983&width=800',
-        alt: 'Brown washed jorts detail view'
+        name: 'Light-Pink Baggy Cargos',
+        description: 'Baggy cargo pants in a light pink shade. Statement piece for bold streetwear looks.',
+        price: 85,
+        currency: '€',
+        image: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png',
+        images: [
+          { id: 1, url: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png', alt: 'Light-pink baggy cargos product' }
+        ],
+        variants: [ { id: 1, name: 'Light Pink', color: '#F8BBD0', available: true } ],
+        category: 'PANTS',
+        tags: ['cargos', 'baggy', 'pink', 'streetwear'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        materials: ['Cotton', 'Polyester'],
+        care: ['Machine wash cold', 'Tumble dry low'],
+        new: true
       },
       {
         id: 4,
-        url: 'https://derschutze.com/cdn/shop/files/2025-06-18-22-2-1_fe1b79cb-35ca-4070-bfaa-cce08f1a3395.jpg?v=1750750983&width=800',
-        alt: 'Brown washed jorts fit view'
-      }
-    ],
-    variants: [
-      {
-        id: 1,
-        name: 'Brown Washed',
-        color: '#8B4513',
-        available: true
+        name: 'White Aesthetic T-Shirt',
+        description: 'Minimalist white t-shirt with a clean, aesthetic cut. Perfect for layering or wearing solo.',
+        price: 39,
+        currency: '€',
+        image: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png',
+        images: [
+          { id: 1, url: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png', alt: 'White aesthetic t-shirt product' }
+        ],
+        variants: [ { id: 1, name: 'White', color: '#FFFFFF', available: true } ],
+        category: 'TOPS',
+        tags: ['t-shirt', 'white', 'minimalist', 'aesthetic'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        materials: ['Cotton'],
+        care: ['Machine wash cold', 'Tumble dry low'],
+        new: true
       },
       {
-        id: 2,
-        name: 'Black Raw',
-        color: '#000000',
-        available: true
-      },
-      {
-        id: 3,
-        name: 'Off White',
-        color: '#F5F5DC',
-        available: false
+        id: 5,
+        name: 'Black Rose Dress Shirt',
+        description: 'Black dress shirt with subtle rose detailing. A sophisticated piece for elevated streetwear fits.',
+        price: 59,
+        currency: '€',
+        image: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png',
+        images: [
+          { id: 1, url: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png', alt: 'Black rose dress shirt product' }
+        ],
+        variants: [ { id: 1, name: 'Black Rose', color: '#222222', available: true } ],
+        category: 'TOPS',
+        tags: ['dress shirt', 'black', 'rose', 'streetwear'],
+        sizes: ['S', 'M', 'L', 'XL'],
+        materials: ['Cotton', 'Polyester'],
+        care: ['Machine wash cold', 'Tumble dry low'],
+        new: true
       }
+    ]
+      image: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png', alt: 'Light-pink baggy cargos product' }
+      ],
+      variants: [ { id: 1, name: 'Light Pink', color: '#F8BBD0', available: true } ],
+      category: 'PANTS',
+      tags: ['cargos', 'baggy', 'pink', 'streetwear'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton', 'Polyester'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    },
+    {
+      id: 4,
+      name: 'White Aesthetic T-Shirt',
+      description: 'Minimalist white t-shirt with a clean, aesthetic cut. Perfect for layering or wearing solo.',
+      price: 39,
+      currency: '€',
+      image: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png', alt: 'White aesthetic t-shirt product' }
+      ],
+      variants: [ { id: 1, name: 'White', color: '#FFFFFF', available: true } ],
+      category: 'TOPS',
+      tags: ['t-shirt', 'white', 'minimalist', 'aesthetic'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    },
+    {
+      id: 5,
+      name: 'Black Rose Dress Shirt',
+      description: 'Black dress shirt with subtle rose detailing. A sophisticated piece for elevated streetwear fits.',
+      price: 59,
+      currency: '€',
+      image: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png', alt: 'Black rose dress shirt product' }
+      ],
+      variants: [ { id: 1, name: 'Black Rose', color: '#222222', available: true } ],
+      category: 'TOPS',
+      tags: ['dress shirt', 'black', 'rose', 'streetwear'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton', 'Polyester'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    }
+  ]
+    image: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png',
+    images: [
+      { id: 1, url: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png', alt: 'Light-pink baggy cargos product' }
     ],
+    variants: [ { id: 1, name: 'Light Pink', color: '#F8BBD0', available: true } ],
+    category: 'PANTS',
+    tags: ['cargos', 'baggy', 'pink', 'streetwear'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    materials: ['Cotton', 'Polyester'],
+    care: ['Machine wash cold', 'Tumble dry low'],
+    new: true
+  },
+  {
+    id: 4,
+    name: 'White Aesthetic T-Shirt',
+    description: 'Minimalist white t-shirt with a clean, aesthetic cut. Perfect for layering or wearing solo.',
+    price: 39,
+    currency: '€',
+    image: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png',
+    images: [
+      { id: 1, url: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png', alt: 'White aesthetic t-shirt product' }
+    ],
+    variants: [ { id: 1, name: 'White', color: '#FFFFFF', available: true } ],
+    category: 'TOPS',
+    tags: ['t-shirt', 'white', 'minimalist', 'aesthetic'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    materials: ['Cotton'],
+    care: ['Machine wash cold', 'Tumble dry low'],
+    new: true
+  },
+  {
+    id: 5,
+    name: 'Black Rose Dress Shirt',
+    description: 'Black dress shirt with subtle rose detailing. A sophisticated piece for elevated streetwear fits.',
+    price: 59,
+    currency: '€',
+    image: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png',
+    images: [
+      { id: 1, url: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png', alt: 'Black rose dress shirt product' }
+    ],
+    variants: [ { id: 1, name: 'Black Rose', color: '#222222', available: true } ],
+    category: 'TOPS',
+    tags: ['dress shirt', 'black', 'rose', 'streetwear'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    materials: ['Cotton', 'Polyester'],
+    care: ['Machine wash cold', 'Tumble dry low'],
+    new: true
+  }
+]
+      materials: ['Denim'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    },
+    {
+      id: 3,
+      name: 'Light-Pink Baggy Cargos',
+      description: 'Baggy cargo pants in a light pink shade. Statement piece for bold streetwear looks.',
+      price: 85,
+      currency: '€',
+      image: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/JWBXX7Bd/Gemini-Generated-Image-g1yu6jg1yu6jg1yu-removebg-preview.png', alt: 'Light-pink baggy cargos product' }
+      ],
+      variants: [ { id: 1, name: 'Light Pink', color: '#F8BBD0', available: true } ],
+      category: 'PANTS',
+      tags: ['cargos', 'baggy', 'pink', 'streetwear'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton', 'Polyester'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    },
+    {
+      id: 4,
+      name: 'White Aesthetic T-Shirt',
+      description: 'Minimalist white t-shirt with a clean, aesthetic cut. Perfect for layering or wearing solo.',
+      price: 39,
+      currency: '€',
+      image: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/XZbPpBD1/Google-AI-Studio-2025-08-11-T00-45-41-274-Z-removebg-preview.png', alt: 'White aesthetic t-shirt product' }
+      ],
+      variants: [ { id: 1, name: 'White', color: '#FFFFFF', available: true } ],
+      category: 'TOPS',
+      tags: ['t-shirt', 'white', 'minimalist', 'aesthetic'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    },
+    {
+      id: 5,
+      name: 'Black Rose Dress Shirt',
+      description: 'Black dress shirt with subtle rose detailing. A sophisticated piece for elevated streetwear fits.',
+      price: 59,
+      currency: '€',
+      image: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png',
+      images: [
+        { id: 1, url: 'https://i.ibb.co/SwQYBjdm/Google-AI-Studio-2025-08-11-T00-44-55-490-Z-removebg-preview.png', alt: 'Black rose dress shirt product' }
+      ],
+      variants: [ { id: 1, name: 'Black Rose', color: '#222222', available: true } ],
+      category: 'TOPS',
+      tags: ['dress shirt', 'black', 'rose', 'streetwear'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      materials: ['Cotton', 'Polyester'],
+      care: ['Machine wash cold', 'Tumble dry low'],
+      new: true
+    }
+  ]
     category: 'JORTS',
     tags: ['denim', 'vintage', 'comfortable', 'durable'],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
@@ -417,11 +633,11 @@ export const products: Product[] = [
     description: "Clean white sneakers with minimalist design. These versatile shoes feature premium materials and construction, making them perfect for everyday wear. The classic white color ensures they go with everything.",
     price: 75,
     currency: '€',
-    image: 'https://derschutze.com/cdn/shop/files/2025-06-18-20-1.jpg?v=1750748720&width=500',
+    image: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/32201864/2025/3/4/42f293db-4f01-4955-a1b9-eacbdabdeb171741062271986-ADIDAS-Originals-Women-Casual-Shoes-1221741062271730-1.jpg',
     images: [
       {
         id: 1,
-        url: 'https://derschutze.com/cdn/shop/files/2025-06-18-20-1.jpg?v=1750748720&width=800',
+        url: 'https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/32201864/2025/3/4/42f293db-4f01-4955-a1b9-eacbdabdeb171741062271986-ADIDAS-Originals-Women-Casual-Shoes-1221741062271730-1.jpg',
         alt: 'White sneakers side view'
       }
     ],
@@ -442,6 +658,31 @@ export const products: Product[] = [
       'Air dry',
       'Do not machine wash'
     ]
+  },
+  {
+    id: 13,
+    name: 'Blossom Jersey',
+    description: 'A limited edition jersey inspired by spring blossoms. Features a soft, breathable fabric and a vibrant floral print. Perfect for casual wear or sports.',
+    price: 65,
+    currency: '€',
+    image: 'https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-50dc-620a-b2e7-86a3566eb0bf/raw?se=2025-08-11T00%3A35%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=7bfad340-4d81-5ed0-a5f4-53b84232d6ab&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-10T10%3A18%3A07Z&ske=2025-08-11T10%3A18%3A07Z&sks=b&skv=2024-08-04&sig=gqZYPJzseTQIDe3eKaNM%2BeNx6py5HHvO2IqFfKezhGw%3D',
+    images: [
+      {
+        id: 1,
+        url: 'https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-50dc-620a-b2e7-86a3566eb0bf/raw?se=2025-08-11T00%3A35%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=7bfad340-4d81-5ed0-a5f4-53b84232d6ab&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-10T10%3A18%3A07Z&ske=2025-08-11T10%3A18%3A07Z&sks=b&skv=2024-08-04&sig=gqZYPJzseTQIDe3eKaNM%2BeNx6py5HHvO2IqFfKezhGw%3D',
+        alt: 'Blossom themed jersey front view'
+      }
+    ],
+    variants: [
+      { id: 1, name: 'Standard', color: 'Blossom', available: true }
+    ],
+    category: 'TOPS',
+    tags: ['jersey', 'blossom', 'floral', 'limited'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    materials: ['Polyester', 'Cotton'],
+    care: ['Machine wash cold', 'Do not bleach', 'Tumble dry low'],
+    featured: true,
+    new: true
   }
 ]
 

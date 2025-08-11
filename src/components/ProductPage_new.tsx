@@ -21,12 +21,12 @@ export default function ProductPage({ product, onAddToCart }: ProductPageProps) 
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <div className="max-w-4xl mx-auto px-2 py-4 md:px-6 md:py-8 pt-20 md:pt-8 overflow-x-hidden">
-        <div className="flex flex-col gap-6 md:gap-12 w-full">
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="max-w-4xl mx-auto px-4 py-6 md:px-6 md:py-8 pt-20 md:pt-8">
+        <div className="flex flex-col gap-8 md:gap-12">
           {/* Product Images - Mobile First */}
-          <div className="flex flex-col items-center space-y-4 w-full">
-            <div className="w-72 h-72 md:w-96 md:h-96 border border-border overflow-hidden bg-white rounded-lg shadow-sm flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="w-80 h-80 md:w-96 md:h-96 border border-border overflow-hidden bg-white rounded-lg shadow-sm flex items-center justify-center">
               <img
                 src={product.images[selectedImage].url}
                 alt={product.images[selectedImage].alt}
@@ -59,15 +59,15 @@ export default function ProductPage({ product, onAddToCart }: ProductPageProps) 
           </div>
 
           {/* Product Info */}
-          <div className="flex flex-col gap-6 text-center md:text-left px-2 md:px-0 w-full max-w-full">
-            <div className="w-full">
-              <h1 className="text-2xl md:text-4xl font-serif text-rose-gold mb-3 leading-tight break-words">
+          <div className="flex flex-col gap-6 text-center md:text-left px-4 md:px-0">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-serif text-rose-gold mb-3 leading-tight">
                 {product.name}
               </h1>
-              <p className="text-xl md:text-3xl text-rose-gold font-bold mb-4">
+              <p className="text-2xl md:text-3xl text-rose-gold font-bold mb-4">
                 {product.currency} {product.price}
               </p>
-              <p className="text-sm md:text-lg text-muted-foreground leading-relaxed break-words">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto md:mx-0">
                 {product.description}
               </p>
             </div>
@@ -118,21 +118,21 @@ export default function ProductPage({ product, onAddToCart }: ProductPageProps) 
             </div>
 
             {/* Quantity and Add to Cart */}
-            <div className="w-full max-w-full">
+            <div className="w-full">
               <div className="flex flex-col gap-4 items-center">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-semibold">Qty:</span>
+                <div className="flex items-center gap-4">
+                  <span className="text-sm font-semibold">Quantity:</span>
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      className="w-8 h-8 border border-border rounded hover:border-rose-gold flex items-center justify-center text-sm"
+                      className="w-8 h-8 border border-border rounded hover:border-rose-gold flex items-center justify-center"
                     >
                       -
                     </button>
-                    <span className="w-8 text-center text-sm">{quantity}</span>
+                    <span className="w-8 text-center">{quantity}</span>
                     <button
                       onClick={() => setQuantity(quantity + 1)}
-                      className="w-8 h-8 border border-border rounded hover:border-rose-gold flex items-center justify-center text-sm"
+                      className="w-8 h-8 border border-border rounded hover:border-rose-gold flex items-center justify-center"
                     >
                       +
                     </button>
@@ -141,7 +141,7 @@ export default function ProductPage({ product, onAddToCart }: ProductPageProps) 
                 
                 <Button
                   onClick={handleAddToCart}
-                  className="px-6 py-3 bg-rose-gold hover:bg-rose-gold/80 text-background font-bold text-base w-full max-w-sm"
+                  className="px-8 py-4 bg-rose-gold hover:bg-rose-gold/80 text-background font-bold text-lg w-full max-w-md"
                   disabled={product.soldOut}
                 >
                   {product.soldOut ? 'Sold Out' : 'Add to Cart'}

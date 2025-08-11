@@ -80,9 +80,9 @@ export default function SearchBar({ placeholder = "Search products...", classNam
     setFocusedIndex(-1)
     // Navigate to product page using React Router if available
     if (navigate) {
-      navigate(`/product/${product.id}`)
+      navigate(`/twinroots/product/${product.id}`)
     } else {
-      window.location.href = `/product/${product.id}`
+      window.location.href = `/twinroots/product/${product.id}`
     }
   }
 

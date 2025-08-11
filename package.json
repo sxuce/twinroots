@@ -6,15 +6,16 @@
   "scripts": {
     "dev": "npm run typecheck && vite",
     "typecheck": "tsc --noEmit --isolatedModules",
-    "build": "npm run typecheck && vite build",
+  "build": "npm run typecheck && vite build && node copy404.cjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist --add"
+    "deploy": "gh-pages -d dist --add"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
     "lucide-react": "^0.539.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

@@ -25,25 +25,25 @@ export default function ProductDetail() {
   }
 
   const handleBackToShop = () => {
-    navigate('/shop')
+    navigate('/twinroots/shop')
   }
 
   if (!product) {
     return (
       <div className="min-h-screen bg-background text-foreground">
-        <div className="p-6">
+        <div className="p-4 md:p-6">
           <Breadcrumb />
           <Button
             onClick={handleBackToShop}
             variant="outline"
-            className="mb-6 border-rose-gold text-rose-gold hover:bg-rose-gold hover:text-background transition-colors"
+            className="mb-4 md:mb-6 border-rose-gold text-rose-gold hover:bg-rose-gold hover:text-background transition-colors w-full md:w-auto text-center"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Shop
           </Button>
-          <div className="text-center py-12">
-            <h1 className="text-2xl font-serif text-rose-gold mb-4">Product Not Found</h1>
-            <p className="text-muted-foreground">The product you're looking for doesn't exist.</p>
+          <div className="text-center py-8 md:py-12">
+            <h1 className="text-xl md:text-2xl font-serif text-rose-gold mb-2 md:mb-4">Product Not Found</h1>
+            <p className="text-xs md:text-base text-muted-foreground">The product you're looking for doesn't exist.</p>
           </div>
         </div>
       </div>
@@ -52,17 +52,16 @@ export default function ProductDetail() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="p-6">
+      <div className="p-4 md:p-6">
         <Breadcrumb />
         <Button
           onClick={handleBackToShop}
           variant="outline"
-          className="mb-6 border-rose-gold text-rose-gold hover:bg-rose-gold hover:text-background transition-colors"
+          className="mb-4 md:mb-6 border-rose-gold text-rose-gold hover:bg-rose-gold hover:text-background transition-colors w-full md:w-auto text-center"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Shop
         </Button>
-        
         <ProductPage 
           product={product}
           onAddToCart={handleAddToCart}

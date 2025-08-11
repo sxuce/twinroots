@@ -24,25 +24,27 @@ export default function Navigation({ selectedCategory, onCategoryChange }: Navig
   const location = useLocation()
   const [showCategories, setShowCategories] = useState(false)
   
-  const isShopPage = location.pathname === '/' || location.pathname === '/shop'
+  const isShopPage = location.pathname === '/twinroots/shop'
 
   return (
-    <div className="border-b border-border p-4 md:p-6 bg-muted">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 w-full">
-          {/* Search Bar - Only show on shop page */}
+    <div className="border-b border-border p-2 md:p-6 bg-muted hidden md:block">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 w-full">
+          {/* Home Button - Always visible, spaced */}
+          <Link to="/twinroots/home" className="text-rose-gold font-bold px-2 py-1 text-base md:text-lg mb-2 md:mb-0">Home</Link>
+          {/* Search Bar - Only show on shop page and not on mobile */}
           {isShopPage && (
-            <div className="w-full md:w-80 mb-2 md:mb-0">
+            <div className="hidden md:block w-80 mb-2 md:mb-0">
               <SearchBar placeholder="Search products..." />
             </div>
           )}
           {/* Main Navigation Links */}
-          <div className="flex flex-wrap gap-2 md:gap-6 w-full">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-6 w-full">
             {navigationLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`hover:text-rose-gold transition-all-smooth px-2 py-1 text-base md:text-sm ${
+                className={`hover:text-rose-gold transition-all-smooth px-2 py-1 text-sm md:text-base text-center ${
                   location.pathname === link.path 
                     ? 'text-rose-gold underline decoration-rose-gold text-shadow-rose-gold' 
                     : 'text-muted-foreground hover:scale-105'

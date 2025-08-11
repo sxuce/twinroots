@@ -7,13 +7,13 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <Link to={`/product/${product.id}`} className="block">
+    <Link to={`/twinroots/product/${product.id}`} className="block">
       <div className="relative group cursor-pointer">
-        <div className="aspect-square border border-border overflow-hidden relative bg-muted hover:border-rose-gold transition-all-smooth hover:glow-rose-gold">
+        <div className="aspect-square border border-border overflow-hidden relative bg-white hover:border-rose-gold transition-all-smooth hover:glow-rose-gold">
           <img 
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
           />
           {product.soldOut && (
             <div className="absolute inset-0 bg-background bg-opacity-80 flex items-center justify-center">

@@ -43,9 +43,9 @@ export default function Breadcrumb() {
   if (breadcrumbs.length === 0) return null
   
   return (
-    <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-6">
+    <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-6 mt-12 md:mt-0">
       <Link 
-        to="/" 
+        to="/twinroots/home" 
         className="flex items-center hover:text-rose-gold transition-colors"
       >
         <Home className="w-4 h-4 mr-1" />
